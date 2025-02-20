@@ -10,9 +10,7 @@
     <body <?php body_class(); ?>>
         <?php wp_body_open(); ?>
 
-        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>></div>
-
-        <?php wp_link_pages(); ?>
+        <h1>yo</h1>
 
         <?php wp_footer(); ?>
     </body>
