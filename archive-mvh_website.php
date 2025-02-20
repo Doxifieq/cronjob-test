@@ -29,7 +29,8 @@
                                     <h3 class="site">' . get_the_title() . '</h3>
                                     <a class="url" href="' . $website_url . '">' . $website_url . '</a>
                                     
-                                    <p class="status"><span class="dot ' . mvh_get_status_code_color($status_code) . '"></span>Status Code: ' . $status_code . '</p>
+                                    <p><span class="dot ' . mvh_get_status_code_color($status_code) . '"></span>Status Code: ' . $status_code . '</p>
+                                    
                                     <a class="url" href="' . get_the_permalink() . '">View</a>
                                 </div>
                             ';
