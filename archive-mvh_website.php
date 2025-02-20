@@ -32,33 +32,9 @@
                         }
                     }
                 ?>
-<!-- 
-                <div class="card">
-                    <h3 class="site">Google</h3>
-                    <p class="url">https://www.google.com</p>
-
-                    <p><span class="dot green"></span>Status Code: 200</p>
-                </div> -->
             </div>
         </div>
 
         <?php wp_footer(); ?>
     </body>
 </html>
-
-<?php
-    /*
-    if (have_posts()) {
-        while (have_posts()) {
-            the_post();
-
-            echo '
-                <li>
-                    <h3>' . get_the_title() . '</h3>
-                    <p>Status code: ' . get_post_meta(get_the_ID(), 'status_code', true) . '</p>
-                </li>
-            ';
-        }
-    }
-    */
-?>
