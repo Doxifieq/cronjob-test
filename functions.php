@@ -1,7 +1,7 @@
 <?php
 
 function mvh_get_status_code_color($status_code) {
-    switch ($status_code) {
+    switch ($status_code) { // break; not needed since it returns a value every case
         case "200":
             return "green";
 
