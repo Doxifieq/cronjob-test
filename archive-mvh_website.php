@@ -22,7 +22,7 @@
 
                             echo '
                                 <div class="card">
-                                    <h3 class="site">' . the_title() . '</h3>
+                                    <h3 class="site">' . get_the_title() . '</h3>
                                     <p class="url">' . get_field('website') . '</p>
 
                                     <p><span class="dot green"></span>Status Code: ' . get_post_meta(get_the_ID(), 'status_code', true) . '</p>
