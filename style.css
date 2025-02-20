@@ -12,15 +12,24 @@ Author URI: literally me
 Author: .
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
     background-color: black;
 }
 
 h1, h2, h3, h4, h5, h6, p {
+    font-family: "Open Sans", sans-serif;
     color: white;
 }
 
 .wrapper {
     background-color: rgb(24, 24, 24);
+    border-radius: 6px;
+    margin: 0 auto;
     width: 90%;
+}
+
+.title {
+    padding: 1em;
 }

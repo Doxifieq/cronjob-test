@@ -11,7 +11,7 @@
         <?php wp_body_open(); ?>
 
         <div class="wrapper">
-            <h1>Status for websites</h1>
+            <h1 class="title">Status for websites</h1>
         </div>
 
         <?php wp_footer(); ?>
