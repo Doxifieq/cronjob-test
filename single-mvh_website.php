@@ -11,8 +11,6 @@
         <?php wp_body_open(); ?>
 
         <div class="wrapper">
-            <h1 class="title">Single Page</h1>
-
             <?php
                 if (have_posts()) {
                     while (have_posts()) {
