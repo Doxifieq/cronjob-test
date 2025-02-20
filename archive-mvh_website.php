@@ -15,7 +15,7 @@
 
             <div class="cards">
                 <div class="card">
-                    <h3>Google</h3>
+                    <h3 class="site">Google</h3>
                     <p class="url">https://www.google.com</p>
 
                     <p><span class="dot green"></span>Status Code: 200</p>

@@ -48,9 +48,14 @@ h1, h2, h3, h4, h5, h6, p {
     width: 90%;
 }
 
+.site {
+    margin: 0;
+}
+
 .url {
     color: rgb(110, 110, 110);
     font-size: 13px;
+    margin: 0;
 }
 
 .dot {
