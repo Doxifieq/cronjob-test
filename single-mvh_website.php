@@ -8,11 +8,7 @@
     </head>
 
     <body <?php body_class(); ?>>
-        <?php wp_body_open(); ?>
-
         <div class="wrapper">
-            <p><?php date("YmdHis"); ?></p>
-
             <?php
                 if (have_posts()) {
                     while (have_posts()) {
@@ -20,7 +16,7 @@
 
                         $post_meta = get_post_meta(get_the_ID());
 
-                        print_r($post_meta);
+                        echo '<p>' . print_r($post_meta) . '</p>';
 
                         echo '<h1 class="title">' . get_the_title() . '</h1>';
                     }
