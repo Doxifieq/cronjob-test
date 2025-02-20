@@ -14,7 +14,7 @@
                     while (have_posts()) {
                         the_post();
 
-                        $post_meta = get_post_meta(get_the_ID());
+                        $post_meta = get_post_meta(get_the_ID(), NULL, true);
                         $website_url = get_field('website');
 
                         echo '<h1 class="title">Uptime history for ' . get_the_title() . '</h1>';
