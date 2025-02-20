@@ -10,25 +10,27 @@
     <body <?php body_class(); ?>>
         <?php wp_body_open(); ?>
 
-        <h1>asdasdasdewr</h1>
-
-        <ul>
-            <?php
-                if (have_posts()) {
-                    while (have_posts()) {
-                        the_post();
-
-                        echo '
-                            <li>
-                                <h3>' . get_the_title() . '</h3>
-                                <p>Status code: ' . get_post_meta(get_the_ID(), 'status_code', true) . '</p>
-                            </li>
-                        ';
-                    }
-                }
-            ?>
-        </ul>
+        <div class="wrapper">
+            <h1>Status for websites</h1>
+        </div>
 
         <?php wp_footer(); ?>
     </body>
 </html>
+
+<?php
+    /*
+    if (have_posts()) {
+        while (have_posts()) {
+            the_post();
+
+            echo '
+                <li>
+                    <h3>' . get_the_title() . '</h3>
+                    <p>Status code: ' . get_post_meta(get_the_ID(), 'status_code', true) . '</p>
+                </li>
+            ';
+        }
+    }
+    */
+?>
