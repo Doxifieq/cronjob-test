@@ -43,3 +43,5 @@
         <?php wp_footer(); ?>
     </body>
 </html>
+
+<!-- php -f public_html/cronjob/cron/script.php >> public_html/cronjob/cron/log.txt &2>1 -->

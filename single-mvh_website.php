@@ -11,6 +11,8 @@
         <?php wp_body_open(); ?>
 
         <div class="wrapper">
+            <p><?php date("YmdHis"); ?></p>
+
             <?php
                 if (have_posts()) {
                     while (have_posts()) {
