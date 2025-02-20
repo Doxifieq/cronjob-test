@@ -27,8 +27,6 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: rgb(24, 24, 24);
     padding-bottom: 1em;
     border-radius: 6px;
-    margin: 0 auto;
-    width: 90%;
 }
 
 .title {
@@ -37,17 +35,16 @@ h1, h2, h3, h4, h5, h6, p {
 
 .cards {
     flex-direction: column;
+    margin: 0 auto;
     display: flex;
-    width: 100%;
+    width: 95%;
     gap: 2em;
 }
 
 .card {
     border: 1px solid rgb(95, 95, 95);
     border-radius: 6px;
-    margin: 0 auto;
     padding: 1em;
-    width: 90%;
 }
 
 .site {
