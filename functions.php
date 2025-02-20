@@ -15,7 +15,7 @@ function mvh_get_status_code_color($status_code) {
 }
 
 function mvh_get_most_recent_status_code($post_meta) {
-    return "0";
+    var_dump($post_meta);
 }
 
 function mvh_enqueue_styles() {
