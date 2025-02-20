@@ -14,30 +14,25 @@
                     while (have_posts()) {
                         the_post();
 
+                        $post_meta = get_post_meta(get_the_ID());
                         $website_url = get_field('website');
 
-                        echo '
-                        <h1 class="title">Uptime history for ' . get_the_title() . '</h1>
-                        <p class="title muted">' . $website_url . '</p>
-                        ';
+                        echo '<h1 class="title">Uptime history for ' . get_the_title() . '</h1>';
+
+                        foreach ($post_meta as $key => $value) {
+                            var_dump($key);
+                            var_dump($value);
+
+                            echo '
+                                <div class="history">
+                                    <h3>01-01-2025 00:00</h3>
+                                    <p class="muted">' . $website_url . '</p>
+                                </div>
+                            ';
+                        }
                     }
                 }
             ?>
-
-            <div class="history">
-                <h3>01-01-2025 00:00</h3>
-                <p class="muted">muted text</p>
-            </div>
-
-            <div class="history">
-                <h3>01-01-2025 00:00</h3>
-                <p class="muted">muted text</p>
-            </div>
-
-            <div class="history">
-                <h3>01-01-2025 00:00</h3>
-                <p class="muted">muted text</p>
-            </div>
         </div>
 
         <?php wp_footer(); ?>
