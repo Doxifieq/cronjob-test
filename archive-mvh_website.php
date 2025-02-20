@@ -19,8 +19,13 @@
                         while (have_posts()) {
                             the_post();
 
-                            $status_code_meta = get_post_meta(get_the_ID(), 'status_code', true);
-                            $status_code = empty($status_code_meta) ? "0" : $status_code_meta;
+                            $post_meta = get_post_meta(get_the_ID());
+                            $status_code = mvh_get_most_recent_status_code($post_meta);
+
+                            //$status_code_meta = get_post_meta(get_the_ID(), 'status_code', true);
+                            //$status_code = empty($status_code_meta) ? "0" : $status_code_meta;
+
+                            $status_code = "0";
 
                             $website_url = get_field('website');
 

@@ -14,10 +14,6 @@
                     while (have_posts()) {
                         the_post();
 
-                        $post_meta = get_post_meta(get_the_ID());
-
-                        echo '<p>' . print_r($post_meta) . '</p>';
-
                         echo '<h1 class="title">' . get_the_title() . '</h1>';
                     }
                 }
