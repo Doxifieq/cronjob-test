@@ -21,10 +21,6 @@
 
                             $status_code = get_post_meta(get_the_ID(), 'status_code', true);
 
-                            if ($status_code == NULL) {
-                                $status_code = "No status code, cronjob has yet to run or an unexpected error occurred.";
-                            }
-
                             echo '
                                 <div class="card">
                                     <h3 class="site">' . get_the_title() . '</h3>

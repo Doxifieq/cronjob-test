@@ -3,6 +3,8 @@
 function mvh_get_status_code_color($status_code) {
     if ($status_code == "200") {
         return "green";
+    } elseif ($status_code == "NULL") {
+        return "red";
     }
 
     return "yellow";
