@@ -12,6 +12,16 @@
 
         <div class="wrapper">
             <h1 class="title">Single Page</h1>
+
+            <?php
+                if (have_posts()) {
+                    while (have_posts()) {
+                        the_post();
+
+                        echo '<h1 class="title">' . get_the_title() . '</h1>';
+                    }
+                }
+            ?>
         </div>
 
         <?php wp_footer(); ?>
