@@ -1,7 +1,7 @@
 <?php
 
 function mvh_enqueue_styles() {
-    wp_enqueue_style('mvh-style', 'style.css');
+    wp_enqueue_style('mvh-style', '/wp-content/themes/cronjob-test/style.css');
 }
 
 add_action('wp_enqueue_scripts', 'mvh_enqueue_styles');
