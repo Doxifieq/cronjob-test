@@ -19,11 +19,8 @@
                         while (have_posts()) {
                             the_post();
 
-                            $status_code = get_post_meta(get_the_ID(), 'status_code', true);
-
-                            if ($status_code == NULL) {
-                                $status_code = "0";
-                            }
+                            $status_code_meta = get_post_meta(get_the_ID(), 'status_code', true);
+                            $status_code = empty($status_code_meta) ? "0" : $status_code_meta;
 
                             echo '
                                 <div class="card">
