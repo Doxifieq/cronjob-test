@@ -23,6 +23,16 @@
                 <h3>01-01-2025 00:00</h3>
                 <p class="muted">muted text</p>
             </div>
+
+            <div class="history">
+                <h3>01-01-2025 00:00</h3>
+                <p class="muted">muted text</p>
+            </div>
+
+            <div class="history">
+                <h3>01-01-2025 00:00</h3>
+                <p class="muted">muted text</p>
+            </div>
         </div>
 
         <?php wp_footer(); ?>
