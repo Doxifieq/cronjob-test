@@ -23,12 +23,16 @@
                             var_dump($key);
                             var_dump($value);
 
-                            echo '
-                                <div class="history">
-                                    <h3>01-01-2025 00:00</h3>
-                                    <p class="muted">' . $website_url . '</p>
-                                </div>
-                            ';
+                            if (preg_match('status_code_', $value[0])) {
+                                $date = date('Y-m-d H:i:s', $value[0]);
+
+                                echo '
+                                    <div class="history">
+                                        <h3>' . $date . '</h3>
+                                        <p class="muted">' . $website_url . '</p>
+                                    </div>
+                                ';
+                            }
                         }
                     }
                 }
