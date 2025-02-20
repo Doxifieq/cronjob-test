@@ -49,11 +49,16 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 1em;
 }
 
+.history {
+    border-top: 1px solid rgb(95, 95, 95);
+    width: 95%;
+}
+
 .site {
     margin: 0;
 }
 
-.url {
+.muted {
     color: rgb(110, 110, 110);
     text-decoration: none;
     font-size: 14px;
