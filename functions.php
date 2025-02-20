@@ -1,7 +1,7 @@
 <?php
 
 function mvh_enqueue_styles() {
-    wp_enqueue_style('mvh-style', __FILE__ . './style.css');
+    wp_enqueue_style('mvh-style', 'style.css');
 }
 
 add_action('wp_enqueue_scripts', 'mvh_enqueue_styles');
