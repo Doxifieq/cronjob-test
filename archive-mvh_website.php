@@ -22,7 +22,7 @@
                             $status_code_meta = get_post_meta(get_the_ID(), 'status_code', true);
                             $status_code = empty($status_code_meta) ? "0" : $status_code_meta;
 
-                            $website_url = get_file('website');
+                            $website_url = get_field('website');
 
                             echo '
                                 <div class="card">
