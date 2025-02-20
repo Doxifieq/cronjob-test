@@ -11,7 +11,7 @@
         <?php wp_body_open(); ?>
 
         <div class="wrapper">
-            <h1>Single Page</h1>
+            <h1 class="title">Single Page</h1>
         </div>
 
         <?php wp_footer(); ?>

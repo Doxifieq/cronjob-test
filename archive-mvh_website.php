@@ -28,7 +28,7 @@
                                 <div class="card">
                                     <h3 class="site">' . get_the_title() . '</h3>
                                     <a class="url" href="' . $website_url . '">' . $website_url . '</a>
-                                    <a class="url" href="' . get_the_permalink() . '">' . get_the_permalink() . '</a>
+                                    <a class="url" href="' . get_the_permalink() . '">See More</a>
 
                                     <p class="status"><span class="dot ' . mvh_get_status_code_color($status_code) . '"></span>Status Code: ' . $status_code . '</p>
                                 </div>
