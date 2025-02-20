@@ -23,7 +23,7 @@
                             var_dump($key);
                             var_dump($value);
 
-                            if (preg_match('status_code_', $value[0])) {
+                            if (str_contains('status_code_', $value[0])) {
                                 $date = date('Y-m-d H:i:s', $value[0]);
 
                                 echo '
