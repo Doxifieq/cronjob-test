@@ -1,5 +1,13 @@
 <?php
 
+function mvh_get_status_code_color($status_code) {
+    if ($status_code == "200") {
+        return "green";
+    }
+
+    return "yellow";
+}
+
 function mvh_enqueue_styles() {
     wp_enqueue_style('mvh-style', '/wp-content/themes/cronjob-test/style.css?dev=' . time());
 }
