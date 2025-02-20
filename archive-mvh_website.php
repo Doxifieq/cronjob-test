@@ -26,7 +26,7 @@
                                     <h3 class="site">' . get_the_title() . '</h3>
                                     <p class="url">' . get_field('website') . '</p>
 
-                                    <p><span class="dot ' . mvh_get_status_code_color($status_code) . '"></span>Status Code: ' . $status_code . '</p>
+                                    <p class="status"><span class="dot ' . mvh_get_status_code_color($status_code) . '"></span>Status Code: ' . $status_code . '</p>
                                 </div>
                             ';
                         }
