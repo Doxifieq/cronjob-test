@@ -14,7 +14,12 @@
                     while (have_posts()) {
                         the_post();
 
-                        echo '<h1 class="title">' . get_the_title() . '</h1>';
+                        $website_url = get_field('website');
+
+                        echo '
+                        <h1 class="title">Uptime history for ' . get_the_title() . '</h1>
+                        <p class="muted">' . $website_url . '</p>
+                        ';
                     }
                 }
             ?>
