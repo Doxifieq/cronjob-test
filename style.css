@@ -43,7 +43,9 @@ h1, h2, h3, h4, h5, h6, p {
 
 .card {
     border: 1px solid rgb(95, 95, 95);
+    flex-direction: column;
     border-radius: 6px;
+    display: flex;
     padding: 1em;
 }
 
