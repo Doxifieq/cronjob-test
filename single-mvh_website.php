@@ -20,8 +20,8 @@
                         echo '<h1 class="title">Uptime history for ' . get_the_title() . '</h1>';
 
                         foreach ($post_meta as $key => $value) {
-                            var_dump($key);
-                            var_dump($value);
+                            //var_dump($key);
+                            //var_dump($value);
 
                             echo $value[0];
 
