@@ -22,10 +22,12 @@
                             $status_code_meta = get_post_meta(get_the_ID(), 'status_code', true);
                             $status_code = empty($status_code_meta) ? "0" : $status_code_meta;
 
+                            $website_url = get_file('website');
+
                             echo '
                                 <div class="card">
                                     <h3 class="site">' . get_the_title() . '</h3>
-                                    <p class="url">' . get_field('website') . '</p>
+                                    <a class="url" href="' . $website_url . '">' . $website_url . '</a>
 
                                     <p class="status"><span class="dot ' . mvh_get_status_code_color($status_code) . '"></span>Status Code: ' . $status_code . '</p>
                                 </div>
