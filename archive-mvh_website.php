@@ -21,6 +21,10 @@
 
                             $status_code = get_post_meta(get_the_ID(), 'status_code', true);
 
+                            if ($status_code == NULL) {
+                                $status_code = "0";
+                            }
+
                             echo '
                                 <div class="card">
                                     <h3 class="site">' . get_the_title() . '</h3>
