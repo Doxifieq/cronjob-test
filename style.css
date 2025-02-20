@@ -51,6 +51,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .history {
     border-top: 1px solid rgb(95, 95, 95);
+    margin: 0 auto;
     width: 95%;
 }
 

@@ -21,7 +21,7 @@
 
             <div class="history">
                 <h3>01-01-2025 00:00</h3>
-                <p>muted text</p>
+                <p class="muted">muted text</p>
             </div>
         </div>
 
