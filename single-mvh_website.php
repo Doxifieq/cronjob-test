@@ -24,6 +24,8 @@
                             //var_dump($value);
 
                             if (str_contains($key, 'status_code_')) {
+                                echo $value[0];
+                                
                                 $date = date('Y-m-d H:i:s', $value[0]);
 
                                 echo '
