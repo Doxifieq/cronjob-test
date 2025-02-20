@@ -10,7 +10,7 @@
     <body <?php body_class(); ?>>
         <?php wp_body_open(); ?>
 
-        <h1>hello</h1>
+        <h1>asdasdasdewr</h1>
 
         <ul>
             <?php
