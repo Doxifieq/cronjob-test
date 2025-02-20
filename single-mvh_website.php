@@ -18,7 +18,7 @@
 
                         echo '
                         <h1 class="title">Uptime history for ' . get_the_title() . '</h1>
-                        <p class="muted">' . $website_url . '</p>
+                        <p class="title muted">' . $website_url . '</p>
                         ';
                     }
                 }
