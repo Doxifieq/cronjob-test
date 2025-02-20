@@ -12,6 +12,15 @@
 
         <div class="wrapper">
             <h1 class="title">Status for websites</h1>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Google</h3>
+                    <p>https://www.google.com</p>
+
+                    <p>Status Code: 200</p>
+                </div>
+            </div>
         </div>
 
         <?php wp_footer(); ?>
