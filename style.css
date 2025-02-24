@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6, p {
     grid-template-rows: 1fr 1fr;
     margin: 0 auto 2.5em auto;
     grid-template:
-        "status" "nextcheck" "last24"
+        "status nextcheck last24"
         "big big big";
     display: grid;
     width: 95%;
