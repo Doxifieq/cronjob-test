@@ -38,7 +38,7 @@
                                 <div class="history-stats status">
                                     <p>Current status</p>
                                     <h3>' . $status . '</h3>
-                                    <p class="muted">Currently up for ' . mvh_get_uptime($post_meta) . '</p>
+                                    <p class="muted">Currently down for ' . mvh_get_uptime($post_meta) . '</p>
                                 </div>
                             ';
                         }

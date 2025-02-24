@@ -11,7 +11,10 @@ function mvh_get_uptime($post_meta) {
         }
     }
 
-    return $highest_time - time();
+    $date1 = new \DateTime('@0');
+    $date2 = new \DateTime('@' . $highest_time - time() . '');
+
+    return $date1->diff($date2)->format('%a days, %h hours, %i minutes and %s seconds');
 }
 
 function mvh_get_status_code_color($status_code) {
