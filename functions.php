@@ -7,6 +7,13 @@ function mvh_get_status_code_color($status_code) {
 
         case NULL:
         case "0":
+        case "404":
+        case "408":
+        case "500":
+        case "501":
+        case "502":
+        case "503":
+        case "504":
             return "red";
 
         default:
