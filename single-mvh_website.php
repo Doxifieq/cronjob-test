@@ -21,7 +21,7 @@
                 }
             ?>
 
-            <div class="history-stats">
+            <div class="history-stats-grid">
                 <div class="history-stats status">
                     <p>Last 7 days</p>
                     <h3>100.00%</h3>

@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* HISTORY */
 
-.history-stats {
+.history-stats-grid {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-bottom: 2.5em;
