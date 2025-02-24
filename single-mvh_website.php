@@ -23,10 +23,6 @@
 
             <div class="history-cards">
                 <?php
-                    if (!have_posts()) {
-                        echo '<h3>Absolutely no downtime. Awesome.</h3>';
-                    }
-
                     if (have_posts()) {
                         while (have_posts()) {
                             the_post();
@@ -37,6 +33,8 @@
                             $status_code = empty($status_code_meta) ? "0" : $status_code_meta;
 
                             $website_url = get_field('website');
+
+                            var_dump($post_meta);
 
                             foreach ($post_meta as $key => $value) {
                                 if (str_contains($key, 'status_code_')) {
