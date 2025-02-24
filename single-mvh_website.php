@@ -57,6 +57,12 @@
                         <h3>100.00%</h3>
                         <p class="muted">0 incidents</p>
                     </div>
+
+                    <div>
+                        <p>placeholder</p>
+                        <h3>placeholder</h3>
+                        <p class="muted">placeholder</p>
+                    </div>
                 </div>
             </div>
 
