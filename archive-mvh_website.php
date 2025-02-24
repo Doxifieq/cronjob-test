@@ -13,7 +13,7 @@
         <div class="wrapper">
             <h1 class="title">Status for websites</h1>
 
-            <div class="cards">
+            <div class="archive-cards">
                 <?php
                     if (have_posts()) {
                         while (have_posts()) {
@@ -25,8 +25,8 @@
                             $website_url = get_field('website');
 
                             echo '
-                                <div class="card">
-                                    <h3 class="site">' . get_the_title() . '</h3>
+                                <div class="archive-card">
+                                    <h3 class="archive-site">' . get_the_title() . '</h3>
                                     <a class="muted" href="' . $website_url . '">' . $website_url . '</a>
                                     
                                     <p><span class="dot ' . mvh_get_status_code_color($status_code) . '"></span>Status Code: ' . $status_code . '</p>
