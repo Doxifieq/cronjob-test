@@ -1,7 +1,7 @@
 <?php
 
 function mvh_get_uptime($post_meta) {
-    $highest_time = time() + 60 * 60; //1 hour behind because why
+    $highest_time = 0;
 
     foreach ($post_meta as $key => $value) {
         if (str_contains($key, 'status_code_')) {
