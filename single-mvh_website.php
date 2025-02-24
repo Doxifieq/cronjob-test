@@ -51,14 +51,11 @@
                         }
                     }
                 ?>
-
-                <!-- <div class="history-card">
-                    <h3>time</h3>
-                    <p class="muted">text</p>
-                </div> -->
             </div>
         </div>
 
         <?php wp_footer(); ?>
     </body>
 </html>
+
+<!-- DELETE FROM `wp_cj_postmeta` WHERE `meta_key` LIKE 'status_code_%' -->
