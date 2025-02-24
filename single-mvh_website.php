@@ -32,13 +32,13 @@
                             $status_code_meta = get_post_meta(get_the_ID(), 'status_code', true);
                             $status_code = empty($status_code_meta) ? "0" : $status_code_meta;
 
-                            $status = $status_code == '200' ? 'Down' : 'Up';
+                            $status = mvh_check_status_code($status_code) ? 'Up' : 'Down';
 
                             echo '
                                 <div class="history-stats status">
                                     <p>Current status</p>
                                     <h3>' . $status . '</h3>
-                                    <p class="muted">Currently up ' . mvh_get_uptime($post_meta) . '</p>
+                                    <p class="muted">Currently up for' . mvh_get_uptime($post_meta) . '</p>
                                 </div>
                             ';
                         }

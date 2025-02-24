@@ -15,9 +15,23 @@ function mvh_get_uptime($post_meta) {
 }
 
 function mvh_get_status_code_color($status_code) {
+    $status = mvh_check_status_code($status_code);
+
+    if ($status == true) {
+        return "green";
+
+    } elseif ($status == false) {
+        return "red";
+
+    } else {
+        return "yellow";
+    }
+}
+
+function mvh_check_status_code($status_code) {
     switch ($status_code) { //break not needed since it always returns a value
         case '200':
-            return 'green';
+            return true;
 
         case NULL:
         case '0':
@@ -28,10 +42,10 @@ function mvh_get_status_code_color($status_code) {
         case '502':
         case '503':
         case '504':
-            return 'red';
+            return false;
 
         default:
-            return 'yellow';
+            return NULL;
     }
 }
 
