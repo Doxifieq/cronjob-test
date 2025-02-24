@@ -34,8 +34,6 @@
 
                             $website_url = get_field('website');
 
-                            var_dump($post_meta);
-
                             foreach ($post_meta as $key => $value) {
                                 if (str_contains($key, 'status_code_')) {
                                     $time = substr($key, 12);
