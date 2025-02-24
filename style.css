@@ -16,6 +16,7 @@ Author: .
 
 :root {
     --primary-color: rgb(229, 229, 229);
+    --border-color: rgb(95, 95, 95);
 }
 
 body {
@@ -77,7 +78,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .archive-card {
-    border: 1px solid rgb(95, 95, 95);
+    border: 1px solid var(--border-color);
     flex-direction: column;
     border-radius: 6px;
     display: flex;
@@ -86,4 +87,21 @@ h1, h2, h3, h4, h5, h6, p {
 
 .archive-site {
     margin: 0;
+}
+
+/* HISTORY */
+
+.history-cards {
+    flex-direction: column;
+    margin: 0 auto;
+    display: flex;
+    width: 95%;
+    gap: 2em;
+}
+
+.history-card {
+    border-top: 1px solid var(--border-color);
+    flex-direction: column;
+    display: flex;
+    padding: 1em;
 }

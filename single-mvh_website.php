@@ -14,7 +14,6 @@
                     while (have_posts()) {
                         the_post();
 
-                        $post_meta = get_post_meta(get_the_ID());
                         $website_url = get_field('website');
 
                         echo '<h1 class="title">Uptime history for ' . get_the_title() . '</h1>';
@@ -22,8 +21,11 @@
                 }
             ?>
 
-            <div class="history">
-                
+            <div class="history-cards">
+                <div class="history-card">
+                    <h3>title</h3>
+                    <p>text</p>
+                </div>
             </div>
         </div>
 
