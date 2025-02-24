@@ -31,8 +31,8 @@
 
                             foreach ($post_meta as $key => $value) {
                                 if (str_contains($key, 'status_code_')) {
-                                    $time = str_replace($key, '', 'status_code_');
-
+                                    $time = substr($key, 12);
+                                    
                                     echo $time;
                                 }
                             }
