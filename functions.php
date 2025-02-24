@@ -14,10 +14,6 @@ function mvh_get_status_code_color($status_code) {
     }
 }
 
-function mvh_get_most_recent_status_code($post_meta) {
-    var_dump($post_meta);
-}
-
 function mvh_enqueue_styles() {
     wp_enqueue_style('mvh-style', '/wp-content/themes/cronjob-test/style.css?dev=' . time());
 }
