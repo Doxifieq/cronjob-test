@@ -30,8 +30,10 @@
                             $post_meta = get_post_meta(get_the_ID());
 
                             foreach ($post_meta as $key => $value) {
-                                var_dump($key);
-                                //var_dump($value);
+                                if (str_contains($key, 'status_code_')) {
+                                    var_dump($key);
+                                    var_dump($value);
+                                }
                             }
                         }
                     }
