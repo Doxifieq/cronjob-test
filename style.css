@@ -93,6 +93,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .history-stats {
     display: grid;
+    width: 95%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template: 
