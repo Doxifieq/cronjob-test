@@ -16,7 +16,7 @@
 
                         $website_url = get_field('website');
 
-                        echo '<h1 class="title">Uptime history for ' . get_the_title() . '</h1>';
+                        echo '<h1 class="title">Downtime history for ' . get_the_title() . '</h1>';
                     }
                 }
             ?>

@@ -31,7 +31,7 @@
                                     
                                     <p><span class="dot ' . mvh_get_status_code_color($status_code) . '"></span>Status Code: ' . $status_code . '</p>
                                     
-                                    <a class="muted" href="' . get_the_permalink() . '">View</a>
+                                    <a class="muted" href="' . get_the_permalink() . '">View Downtime</a>
                                 </div>
                             ';
                         }
