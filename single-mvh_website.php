@@ -23,8 +23,8 @@
 
             <div class="history-cards">
                 <div class="history-card">
-                    <h3>title</h3>
-                    <p>text</p>
+                    <h3>time</h3>
+                    <p class="muted">text</p>
                 </div>
             </div>
         </div>
