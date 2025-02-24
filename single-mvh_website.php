@@ -27,7 +27,9 @@
                         while (have_posts()) {
                             the_post();
 
-                            $post_meta = get_post_meta(get_the_ID());
+                            $status_code_meta = get_post_meta(get_the_ID(), 'status_code', true);
+                            $status_code = empty($status_code_meta) ? "0" : $status_code_meta;
+
                             $website_url = get_field('website');
 
                             foreach ($post_meta as $key => $value) {
