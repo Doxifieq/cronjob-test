@@ -30,7 +30,7 @@
                             $post_meta = get_post_meta(get_the_ID());
 
                             foreach ($post_meta as $key => $value) {
-                                var_dump($key);
+                                //var_dump($key);
                                 var_dump($value);
                             }
                         }
