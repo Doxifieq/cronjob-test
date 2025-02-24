@@ -91,6 +91,21 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* HISTORY */
 
+.history-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template: 
+        "status" "nextcheck" "last24"
+        "big big big";
+}
+
+.history-stats-status {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    grid-area: "status";
+}
+
 .history-cards {
     flex-direction: column;
     margin: 0 auto;

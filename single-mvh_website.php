@@ -21,6 +21,14 @@
                 }
             ?>
 
+            <div class="history-stats">
+                <div class="history-stats-status">
+                    <p>Last 7 days</p>
+                    <h3>100.00%</h3>
+                    <p>0 incidents</p>
+                </div>
+            </div>
+
             <div class="history-cards">
                 <?php
                     if (have_posts()) {
