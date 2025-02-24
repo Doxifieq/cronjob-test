@@ -32,7 +32,6 @@
                             foreach ($post_meta as $key => $value) {
                                 if (str_contains($key, 'status_code_')) {
                                     var_dump($key);
-                                    var_dump($value);
                                 }
                             }
                         }
