@@ -31,6 +31,7 @@
                 <div class="history-stats check">
                     <p>Check every</p>
                     <h3>5 minutes</h3>
+                    <p class="muted">Checking in 0d 0h 0m 0s</p>
                 </div>
 
                 <div class="history-stats last24">
