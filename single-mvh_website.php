@@ -33,7 +33,7 @@
                                 if (str_contains($key, 'status_code_')) {
                                     $time = explode($key, 'status_code_');
 
-                                    echo $time[1];
+                                    var_dump($time);
                                 }
                             }
                         }
