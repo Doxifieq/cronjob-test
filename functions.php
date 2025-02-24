@@ -1,23 +1,37 @@
 <?php
 
+function mvh_get_uptime($post_meta) {
+    $highest_time = time();
+
+    foreach ($post_meta as $key => $value) {
+        if (str_contains($key, 'status_code_')) {
+            $time = substr($key, 12); //this is stupid but im also stupid and this works
+
+            if ($time > $highest_time) $highest_time = $time;
+        }
+    }
+
+    return date('Y-m-d H:i:s', $highest_time - time());
+}
+
 function mvh_get_status_code_color($status_code) {
-    switch ($status_code) { // break; not needed since it returns a value every case
-        case "200":
-            return "green";
+    switch ($status_code) { //break not needed since it always returns a value
+        case '200':
+            return 'green';
 
         case NULL:
-        case "0":
-        case "404":
-        case "408":
-        case "500":
-        case "501":
-        case "502":
-        case "503":
-        case "504":
-            return "red";
+        case '0':
+        case '404':
+        case '408':
+        case '500':
+        case '501':
+        case '502':
+        case '503':
+        case '504':
+            return 'red';
 
         default:
-            return "yellow";
+            return 'yellow';
     }
 }
 

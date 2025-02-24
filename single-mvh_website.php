@@ -22,11 +22,28 @@
             ?>
 
             <div class="history-stats-grid">
-                <div class="history-stats status">
-                    <p>Current status</p>
-                    <h3>Up</h3>
-                    <p class="muted">Currently up for 0d 0h 0m</p>
-                </div>
+                <?php
+                    if (have_posts()) {
+                        while (have_posts()) {
+                            the_post();
+
+                            $post_meta = get_post_meta(get_the_ID());
+
+                            $status_code_meta = get_post_meta(get_the_ID(), 'status_code', true);
+                            $status_code = empty($status_code_meta) ? "0" : $status_code_meta;
+
+                            $status = $status_code == '200' ? 'Down' : 'Up';
+
+                            echo '
+                                <div class="history-stats status">
+                                    <p>Current status</p>
+                                    <h3>' . $status . '</h3>
+                                    <p class="muted">Currently up ' . mvh_get_uptime($post_meta) . '</p>
+                                </div>
+                            ';
+                        }
+                    }
+                ?>
 
                 <div class="history-stats check">
                     <p>Check every</p>
@@ -82,7 +99,7 @@
 
                             foreach ($post_meta as $key => $value) {
                                 if (str_contains($key, 'status_code_')) {
-                                    $time = substr($key, 12); //this is stupid but im also stupid and this works
+                                    $time = substr($key, 12);
                                     
                                     echo '
                                         <div class="history-card">
