@@ -27,7 +27,7 @@
                         while (have_posts()) {
                             the_post();
 
-                            $post_meta = get_post_meta_by_id(get_the_ID());
+                            $post_meta = get_post_meta(get_the_ID());
 
                             var_dump($post_meta);
                         }
