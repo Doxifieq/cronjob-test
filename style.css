@@ -123,6 +123,7 @@ h1, h2, h3, h4, h5, h6, p {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-area: big;
     display: grid;
+    gap: 1.5em;
 }
 
 .history-stats.big div:not(:last-child) {
