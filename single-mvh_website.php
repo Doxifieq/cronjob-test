@@ -22,25 +22,25 @@
             ?>
 
             <div class="history-stats">
-                <div class="history-stats-status">
+                <div class="history-stats-card status">
                     <p>Last 7 days</p>
                     <h3>100.00%</h3>
                     <p>0 incidents</p>
                 </div>
 
-                <div class="history-stats-status">
+                <div class="history-stats-card nextcheck">
                     <p>Last 7 days</p>
                     <h3>100.00%</h3>
                     <p>0 incidents</p>
                 </div>
 
-                <div class="history-stats-status">
+                <div class="history-stats-card last24">
                     <p>Last 7 days</p>
                     <h3>100.00%</h3>
                     <p>0 incidents</p>
                 </div>
 
-                <div class="history-stats-status">
+                <div class="history-stats-card big">
                     <p>Last 7 days</p>
                     <h3>100.00%</h3>
                     <p>0 incidents</p>

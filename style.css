@@ -103,11 +103,26 @@ h1, h2, h3, h4, h5, h6, p {
     gap: 2em;
 }
 
-.history-stats-status {
+.history-stats-card {
     border: 1px solid var(--border-color);
-    grid-area: "status";
     border-radius: 6px;
     padding: 1em;
+}
+
+.history-stats-card.status {
+    grid-area: "status";
+}
+
+.history-stats-card.nextcheck {
+    grid-area: "nextcheck";
+}
+
+.history-stats-card.last24 {
+    grid-area: "last24";
+}
+
+.history-stats-card.big {
+    grid-area: "big";
 }
 
 .history-cards {
