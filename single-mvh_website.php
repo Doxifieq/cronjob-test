@@ -43,6 +43,7 @@
                                             <h3 class="history-time">' . date('Y-m-d H:i:s', $time) . '</h3>
 
                                             <p><span class="dot ' . mvh_get_status_code_color($status_code) . '"></span>Status Code: ' . $status_code . '</p>
+                                            
                                             <a class="muted" href="' . $website_url . '">' . $website_url . '</a>
                                         </div>
                                     ';
