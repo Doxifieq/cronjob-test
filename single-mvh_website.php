@@ -29,7 +29,10 @@
 
                             $post_meta = get_post_meta(get_the_ID());
 
-                            var_dump($post_meta);
+                            foreach ($post_meta as $key => $value) {
+                                var_dump($key);
+                                var_dump($value);
+                            }
                         }
                     }
                 ?>
