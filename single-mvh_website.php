@@ -31,7 +31,9 @@
 
                             foreach ($post_meta as $key => $value) {
                                 if (str_contains($key, 'status_code_')) {
-                                    var_dump($key);
+                                    $time = explode($key, 'status_code_');
+
+                                    echo $time[1];
                                 }
                             }
                         }
