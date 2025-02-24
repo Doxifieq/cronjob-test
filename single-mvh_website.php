@@ -36,7 +36,7 @@
                                     
                                     echo '
                                         <div class="history-card">
-                                            <h3>' . date($time) . '</h3>
+                                            <h3>' . date('Y-m-d H:i:s', $time) . '</h3>
                                             <p class="muted">' . $website_url . '</p>
                                         </div>
                                     ';
