@@ -28,12 +28,18 @@
                             the_post();
 
                             $post_meta = get_post_meta(get_the_ID());
+                            $website_url = get_field('website');
 
                             foreach ($post_meta as $key => $value) {
                                 if (str_contains($key, 'status_code_')) {
                                     $time = substr($key, 12);
                                     
-                                    echo date('Y-m-d H:i:s');
+                                    echo '
+                                        <div class="history-card">
+                                            <h3>' . date($time) . '</h3>
+                                            <p class="muted">' . $website_url . '</p>
+                                        </div>
+                                    ';
                                 }
                             }
                         }
