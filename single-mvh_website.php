@@ -23,6 +23,10 @@
 
             <div class="history-cards">
                 <?php
+                    if (!have_posts()) {
+                        echo '<h3>Absolutely no downtime. Awesome.</h3>';
+                    }
+
                     if (have_posts()) {
                         while (have_posts()) {
                             the_post();
