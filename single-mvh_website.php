@@ -30,7 +30,7 @@
 
                 <div class="history-stats check">
                     <p>Check every</p>
-                    <p>5 minutes</p>
+                    <h3>5 minutes</h3>
                 </div>
 
                 <div class="history-stats last24">
