@@ -25,6 +25,7 @@
                 <div class="history-stats status">
                     <p>Current status</p>
                     <h3>Up</h3>
+                    <p class="muted">Currently up for 0d 0h 0m</p>
                 </div>
 
                 <div class="history-stats check">
@@ -33,13 +34,29 @@
                 </div>
 
                 <div class="history-stats last24">
-                    <p>Last 7 days</p>
+                    <p>Last 24 hours</p>
                     <h3>100.00%</h3>
                     <p class="muted">0 incidents</p>
                 </div>
 
                 <div class="history-stats big">
-                    <h3>placeholder</h3>
+                    <div>
+                        <p>Last 7 days</p>
+                        <h3>100.00%</h3>
+                        <p class="muted">0 incidents</p>
+                    </div>
+
+                    <div>
+                        <p>Last 30 days</p>
+                        <h3>100.00%</h3>
+                        <p class="muted">0 incidents</p>
+                    </div>
+
+                    <div>
+                        <p>Last 365 days</p>
+                        <h3>100.00%</h3>
+                        <p class="muted">0 incidents</p>
+                    </div>
                 </div>
             </div>
 
