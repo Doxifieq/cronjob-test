@@ -11,7 +11,7 @@ function mvh_get_uptime($post_meta) {
         }
     }
 
-    return time() - $highest_time;
+    return $highest_time - time();
 }
 
 function mvh_get_status_code_color($status_code) {
