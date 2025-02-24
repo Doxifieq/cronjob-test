@@ -99,6 +99,7 @@ h1, h2, h3, h4, h5, h6, p {
         "big big big";
     margin: 0 auto;
     display: grid;
+    padding: 1em;
     width: 95%;
     gap: 2em;
 }
