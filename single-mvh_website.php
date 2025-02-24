@@ -22,10 +22,22 @@
             ?>
 
             <div class="history-cards">
-                <div class="history-card">
+                <?php
+                    if (have_posts()) {
+                        while (have_posts()) {
+                            the_post();
+
+                            $post_meta = get_post_meta_by_id(get_the_ID());
+
+                            var_dump($post_meta);
+                        }
+                    }
+                ?>
+
+                <!-- <div class="history-card">
                     <h3>time</h3>
                     <p class="muted">text</p>
-                </div>
+                </div> -->
             </div>
         </div>
 
