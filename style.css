@@ -120,9 +120,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .history-stats.big {
-    flex-direction: column;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-area: big;
-    display: flex;
+    display: grid;
 }
 
 .history-cards {
