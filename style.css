@@ -92,8 +92,6 @@ h1, h2, h3, h4, h5, h6, p {
 /* HISTORY */
 
 .history-stats-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     margin: 0 auto 2.5em auto;
     grid-template:
         "status nextcheck last24"
@@ -110,19 +108,19 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .history-stats.status {
-    grid-area: "status";
+    grid-area: status;
 }
 
 .history-stats.nextcheck {
-    grid-area: "nextcheck";
+    grid-area: nextcheck;
 }
 
 .history-stats.last24 {
-    grid-area: "last24";
+    grid-area: last24;
 }
 
 .history-stats.big {
-    grid-area: "big";
+    grid-area: big;
 }
 
 .history-cards {
