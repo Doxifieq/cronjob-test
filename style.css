@@ -104,25 +104,25 @@ h1, h2, h3, h4, h5, h6, p {
     gap: 2em;
 }
 
-.history-stats-card {
+.history-stats {
     border: 1px solid var(--border-color);
     border-radius: 6px;
     padding: 1em;
 }
 
-.history-stats-card.status {
+.history-stats.status {
     grid-area: "status";
 }
 
-.history-stats-card.nextcheck {
+.history-stats.nextcheck {
     grid-area: "nextcheck";
 }
 
-.history-stats-card.last24 {
+.history-stats.last24 {
     grid-area: "last24";
 }
 
-.history-stats-card.big {
+.history-stats.big {
     grid-area: "big";
 }
 
