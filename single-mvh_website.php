@@ -23,27 +23,23 @@
 
             <div class="history-stats-grid">
                 <div class="history-stats status">
-                    <p>Last 7 days</p>
-                    <h3>100.00%</h3>
-                    <p>0 incidents</p>
+                    <p>Current status</p>
+                    <h3>Up</h3>
                 </div>
 
-                <div class="history-stats nextcheck">
-                    <p>Last 7 days</p>
-                    <h3>100.00%</h3>
-                    <p>0 incidents</p>
+                <div class="history-stats check">
+                    <p>Check every</p>
+                    <p>5 minutes</p>
                 </div>
 
                 <div class="history-stats last24">
                     <p>Last 7 days</p>
                     <h3>100.00%</h3>
-                    <p>0 incidents</p>
+                    <p class="muted">0 incidents</p>
                 </div>
 
                 <div class="history-stats big">
-                    <p>Last 7 days</p>
-                    <h3>100.00%</h3>
-                    <p>0 incidents</p>
+                    <h3>placeholder</h3>
                 </div>
             </div>
 

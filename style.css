@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6, p {
 .history-stats-grid {
     margin: 0 auto 2.5em auto;
     grid-template:
-        "status nextcheck last24"
+        "status check last24"
         "big big big";
     display: grid;
     width: 95%;
@@ -111,8 +111,8 @@ h1, h2, h3, h4, h5, h6, p {
     grid-area: status;
 }
 
-.history-stats.nextcheck {
-    grid-area: nextcheck;
+.history-stats.check {
+    grid-area: check;
 }
 
 .history-stats.last24 {
