@@ -33,7 +33,7 @@
                                 if (str_contains($key, 'status_code_')) {
                                     $time = substr($key, 12);
                                     
-                                    echo $time;
+                                    echo date('Y-m-d H:i:s');
                                 }
                             }
                         }
