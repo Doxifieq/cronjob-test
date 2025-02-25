@@ -86,6 +86,8 @@
 
             <div class="history-cards">
                 <?php
+                    $incidents = 0;
+
                     if (have_posts()) {
                         while (have_posts()) {
                             the_post();
@@ -100,6 +102,7 @@
                             foreach ($post_meta as $key => $value) {
                                 if (str_contains($key, 'status_code_')) {
                                     $time = substr($key, 12);
+                                    $incidents++;
                                     
                                     echo '
                                         <div class="history-card">
@@ -114,6 +117,8 @@
                             }
                         }
                     }
+
+                    if ($incidents == 0) echo '<h3>No incidents.</h3>';
                 ?>
             </div>
         </div>
