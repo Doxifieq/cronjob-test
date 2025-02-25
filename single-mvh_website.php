@@ -99,7 +99,7 @@
 
                             $website_url = get_field('website');
 
-                            foreach (array_reverse($post_meta, true) as $key => $value) {
+                            foreach (array_reverse($post_meta, true) /* reverse so newest incidents are at top of page */ as $key => $value) {
                                 if (str_contains($key, 'status_code_')) {
                                     $time = substr($key, 12);
                                     $incidents++;

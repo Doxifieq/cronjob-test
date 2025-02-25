@@ -11,23 +11,20 @@ function mvh_get_uptime($post_meta) {
         }
     }
 
-    $date1 = new \DateTime('@0');
-    $date2 = new \DateTime('@' . $highest_time - time() . '');
-
-    return $date1->diff($date2)->format('%a days, %h hours, %i minutes and %s seconds');
+    return '0 days 0 hours 0 minutes 0 seconds';
 }
 
 function mvh_get_status_code_color($status_code) {
     $status = mvh_check_status_code($status_code);
 
     if ($status == true) {
-        return "green";
+        return 'green';
 
     } elseif ($status == false) {
-        return "red";
+        return 'red';
 
     } else {
-        return "yellow";
+        return 'yellow';
     }
 }
 
