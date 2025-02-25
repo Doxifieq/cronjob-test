@@ -6,11 +6,11 @@ function mvh_get_status_code_color($status_code) {
     if ($status == true) {
         return 'green';
 
-    } elseif ($status == false) {
-        return 'red';
+    } elseif ($status == NULL) {
+        return 'yellow';
     }
 
-    return "yellow";
+    return "red";
 }
 
 function mvh_check_status_code($status_code) {
