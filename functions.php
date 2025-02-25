@@ -1,13 +1,11 @@
 <?php
 
 function mvh_get_uptime($post_meta) {
-    $highest_time = 0;
+    $newest = NULL;
 
-    foreach ($post_meta as $key => $value) {
+    foreach(array_reverse($post_meta, true) /* reverse to get newest incidents first */ as $key => $value) {
         if (str_contains($key, 'status_code_')) {
-            $time = substr($key, 12); //this is stupid but im also stupid and this works
-
-            if ($time > $highest_time) $highest_time = $time;
+            $newest = $key;
         }
     }
 
@@ -44,7 +42,7 @@ function mvh_check_status_code($status_code) {
         case '504':
             return false;
 
-        default:
+        default: //NULL will be neutral
             return NULL;
     }
 }
