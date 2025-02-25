@@ -1,15 +1,18 @@
 <?php
 
 function mvh_get_uptime($post_meta) {
-    $newest = NULL;
+    $time = 0;
 
-    foreach(array_reverse($post_meta, true) /* reverse to get newest incidents first */ as $key => $value) {
+    foreach($post_meta as $key => $value) {
         if (str_contains($key, 'status_code_')) {
-            $newest = $key;
+            $time = substr($key, 12);
         }
     }
 
-    return '0 days 0 hours 0 minutes 0 seconds';
+    $post_date = date('H:i:s', $time);
+    $curr_date = date('H:i:s', time());
+
+    return $curr_date - $post_date;
 }
 
 function mvh_get_status_code_color($status_code) {
