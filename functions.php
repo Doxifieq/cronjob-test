@@ -1,7 +1,25 @@
 <?php
 
 function mvh_get_uptime($post_meta) {
-    
+    if (key_exists('status_code', $post_meta)) {
+        $status_code = $post_meta['status_code'][0];
+
+        if ($status_code == '200') {
+            return time() - mvh_get_latest_downtime_as_time($post_meta);
+        }
+    }
+}
+
+function mvh_get_latest_downtime_as_time($post_meta) {
+    $time = 0;
+
+    foreach (array_reverse($post_meta, true) /* reverse to get newest first */ as $key => $value) {
+        if (str_contains($key, 'status_code_')) {
+            $time = substr($key, 12);
+        }
+    }
+
+    return $time;
 }
 
 function mvh_get_status_code_color($status_code) {
