@@ -33,7 +33,7 @@
                             $status_code = empty($status_code_meta) ? "0" : $status_code_meta;
 
                             $status = mvh_check_status_code($status_code) ? 'Up' : 'Down';
-                            var_dump($post_meta);
+                            var_dump($post_meta['status_code']);
                             echo '
                                 <div class="history-stats status">
                                     <p>Current status</p>
