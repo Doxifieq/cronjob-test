@@ -5,14 +5,12 @@ function mvh_get_status_code_color($status_code) {
 
     if (is_null($status)) {
         return "yellow";
-    }
 
-    if ($status == true) {
+    } elseif ($status == true) {
         return 'green';
-
-    } else {
-        return 'red';
     }
+
+    return "red";
 }
 
 function mvh_check_status_code($status_code) {
