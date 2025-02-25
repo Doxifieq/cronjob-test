@@ -8,10 +8,9 @@ function mvh_get_status_code_color($status_code) {
 
     } elseif ($status == false) {
         return 'red';
-
-    } else {
-        return 'yellow';
     }
+
+    return "yellow";
 }
 
 function mvh_check_status_code($status_code) {
