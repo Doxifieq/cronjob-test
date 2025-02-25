@@ -14,13 +14,18 @@ function mvh_get_status_code_color($status_code) {
 }
 
 function mvh_get_last_downtime($post_meta) {
-    $keys = array_keys($post_meta);
-    $valid_keys = preg_grep('/^status_code_/i', $keys);
+    $last_downtime = NULL;
 
-    if ($valid_keys) {
-        $time = substr(array_key_first($valid_keys), 12);
+    foreach ($post_meta as $key => $value) {
+        if (str_contains($key, 'status_code_')) {
+            $last_downtime = $key;
+        }
+    }
 
-        return $time;
+    if (!is_null($last_downtime)) {
+        $time = substr($key, 12);
+
+        return time() + 60 * 60 - $time;
     }
 
     return "0d 0h 0m 0s";
