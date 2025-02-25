@@ -6,15 +6,15 @@ function mvh_get_status_code_color($status_code) {
     if ($status == true) {
         return 'green';
 
-    } elseif ($status == NULL) {
-        return 'yellow';
+    } elseif ($status == false) {
+        return 'red';
     }
 
-    return "red";
+    return "yellow";
 }
 
 function mvh_check_status_code($status_code) {
-    switch ($status_code) { //break not needed since it always returns a value
+    switch ($status_code) {
         case '200':
             return true;
 
@@ -29,8 +29,8 @@ function mvh_check_status_code($status_code) {
         case '504':
             return false;
 
-        default: //NULL will be neutral
-            return NULL;
+        default:
+            break;
     }
 }
 
