@@ -54,26 +54,26 @@
 
                 <div class="history-stats last24">
                     <p>Last 24 hours</p>
-                    <h3>100.00%</h3>
+                    <h3>No Data</h3>
                     <p class="muted">0 incidents</p>
                 </div>
 
                 <div class="history-stats big">
                     <div>
                         <p>Last 7 days</p>
-                        <h3>100.00%</h3>
+                        <h3>No Data</h3>
                         <p class="muted">0 incidents</p>
                     </div>
 
                     <div>
                         <p>Last 30 days</p>
-                        <h3>100.00%</h3>
+                        <h3>No Data</h3>
                         <p class="muted">0 incidents</p>
                     </div>
 
                     <div>
                         <p>Last 365 days</p>
-                        <h3>100.00%</h3>
+                        <h3>No Data</h3>
                         <p class="muted">0 incidents</p>
                     </div>
 
