@@ -25,8 +25,8 @@ function mvh_get_last_downtime($post_meta) {
     if (!is_null($last_downtime)) {
         $time = substr($key, 12);
 
-        $last_downtime_date = new \DateTime("@$time");
-        $curr_date = new \DateTime('@' . time() + 60 * 60);
+        $last_downtime_date = new DateTime("@$time");
+        $curr_date = new DateTime('@' . time() + 60 * 60);
 
         return $last_downtime_date->diff($curr_date)->format('%ad %hh %im %ss');
     }
