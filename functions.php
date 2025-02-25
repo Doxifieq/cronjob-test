@@ -1,18 +1,7 @@
 <?php
 
 function mvh_get_uptime($post_meta) {
-    $time = 0;
-
-    foreach($post_meta as $key => $value) {
-        if (str_contains($key, 'status_code_')) {
-            $time = substr($key, 12);
-        }
-    }
-
-    $post_date = date('H:i:s', $time);
-    $curr_date = date('H:i:s', time());
-
-    return $curr_date - $post_date;
+    
 }
 
 function mvh_get_status_code_color($status_code) {
