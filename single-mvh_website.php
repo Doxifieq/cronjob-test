@@ -32,8 +32,8 @@
                             $status_code_meta = get_post_meta(get_the_ID(), 'status_code', true);
                             $status_code = empty($status_code_meta) ? '0' : $status_code_meta;
 
-                            $last_downtime = !is_null(mvh_check_status_code($status_code)) ? mvh_get_last_downtime($post_meta) : '0d 0h 0m 0s';
-                            $status = !is_null(mvh_check_status_code($status_code)) ? 'Up' : 'Down';
+                            $last_downtime = mvh_check_status_code($status_code) ? mvh_get_last_downtime($post_meta) : '0d 0h 0m 0s';
+                            $status = mvh_check_status_code($status_code) ? 'Up' : 'Down';
 
                             echo '
                                 <div class="history-stats status">
