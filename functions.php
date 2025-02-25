@@ -13,6 +13,10 @@ function mvh_get_status_code_color($status_code) {
     return "red";
 }
 
+function mvh_get_last_downtime() {
+    return "0d 0h 0m 0s";
+}
+
 function mvh_check_status_code($status_code) {
     switch ($status_code) {
         case '200':
