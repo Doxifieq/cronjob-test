@@ -30,7 +30,7 @@
                             $post_meta = get_post_meta(get_the_ID());
 
                             $status_code_meta = get_post_meta(get_the_ID(), 'status_code', true);
-                            $status_code = empty($status_code_meta) ? "0" : $status_code_meta;
+                            $status_code = empty($status_code_meta) ? '0' : $status_code_meta;
 
                             $status = mvh_check_status_code($status_code) ? 'Up' : 'Down';
 
